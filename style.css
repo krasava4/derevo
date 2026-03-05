@@ -734,3 +734,25 @@ h2 {
     }
 }
 
+/* 🍎 СОВРЕМЕННЫЕ ШРИФТЫ С ВАШЕГО ПК */
+body {
+    font-family: 
+        -apple-system, BlinkMacSystemFont, 
+        'Segoe UI', Roboto, Oxygen, Ubuntu, 
+        Cantarell, sans-serif !important;
+}
+
+
+/* ✨ МОЯ РЕКОМЕНДАЦИЯ ДЛЯ КУРСОВОЙ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', -apple-system, Arial, sans-serif !important;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', 'Playfair Display', serif !important;
+    font-weight: 700 !important;
+}
+
+
