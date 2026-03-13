@@ -6,7 +6,7 @@
      <!-- 🖼️ ИКОНКА САЙТА -->
     <link rel="icon" href="favicon-32x32.ico" type="image/x-icon">
     <title>Вкусный дом - Домашние рецепты</title>
-       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,20 +25,17 @@
                 <a href="#add-recipe">Поделиться рецептом</a>
                 <a href="#menu">Меню на неделю</a>
                 <a href="#reviews">Отзывы</a>
-                <a href="#contacts"> Контакты</a>
             </nav>
-            <div class="burger" id="burger">
+            <div class="burger" id="burgerMenu">
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu" id="mobileNav">
             <ul>
                 <li><a href="#recipes">Рецепты</a></li>
                 <li><a href="#add-recipe">Поделиться рецептом</a></li> 
                 <li><a href="#menu">Меню на неделю</a></li>
                 <li><a href="#reviews">Отзывы</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-               
             </ul>
         </div>
     </header>
@@ -240,6 +237,178 @@
                         </div>
                     </div>
                 </div>
+                <!-- РЕЦЕПТ 4: Горячее/Суп -->
+<div class="recipe-card" 
+     data-category="gorachie"
+     data-price="120"  
+     data-base-portions="6"
+     data-search="борщ свекла мясо капуста картофель морковь"
+     data-title="Борщ классический"
+     onclick="flipCard(this)">
+    <div class="recipe-flip">
+        <div class="recipe-front">
+            <img src="borshi.jpeg" alt="Борщ" class="recipe-img">
+            <h3 class="recipe-title">Борщ классический</h3>
+            <div class="recipe-meta">
+                <div class="recipe-time">
+                    <span>🕒</span><span>90 минут</span>
+                </div>
+                <div class="rating-container" data-recipe-id="4">
+                    <span class="rating-stars" data-rating="4.9">★★★★★</span>
+                    <span class="rating-count">(156)</span>
+                </div>
+            </div>
+        </div>
+        <div class="recipe-back">
+            <div class="portions-control">
+                <div class="share-buttons">
+                    <button class="share-btn" onclick="shareRecipe(4)">📱 Поделиться</button>
+                </div>
+                <label>Порции: </label>
+                <select class="portions-select" data-recipe-id="4">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="6" selected>6</option>
+                </select>
+            </div>
+            <h3>🥣 Ингредиенты:</h3>
+            <ul class="ingredients" data-recipe-id="4">
+                <li data-amount="400">400г говядины</li>
+                <li data-amount="2">2 свеклы</li>
+                <li data-amount="300">300г капусты</li>
+                <li data-amount="4">4 картофелины</li>
+                <li data-amount="2">2 моркови</li>
+                <li data-amount="1">1 лук</li>
+                <li data-amount="2">2 ст.л. томатной пасты</li>
+                <li>Сметана, зелень</li>
+            </ul>
+            <h3>👨‍🍳 Приготовление:</h3>
+            <div class="instructions">
+                1. Сварить мясной бульон 1 час<br>
+                2. Обжарить свеклу с томатом<br>
+                3. Добавить овощи, варить 25 мин<br>
+                4. Заправить чесноком и зеленью
+            </div>
+            <button class="confetti-btn" onclick="launchConfetti()">🎉 Рецепт готов!</button>
+        </div>
+    </div>
+</div>
+                <!-- РЕЦЕПТ 5: Горячее -->
+<div class="recipe-card" 
+     data-category="gorachie"
+     data-price="95"  
+     data-base-portions="4"
+     data-search="пельмени тесто мясо фарш лук яйцо"
+     data-title="Пельмени домашние"
+     onclick="flipCard(this)">
+    <div class="recipe-flip">
+        <div class="recipe-front">
+            <img src="pelmeni.jpg" alt="Пельмени" class="recipe-img">
+            <h3 class="recipe-title">Пельмени домашние</h3>
+            <div class="recipe-meta">
+                <div class="recipe-time">
+                    <span>🕒</span><span>120 минут</span>
+                </div>
+                <div class="rating-container" data-recipe-id="5">
+                    <span class="rating-stars" data-rating="4.7">★★★★★</span>
+                    <span class="rating-count">(89)</span>
+                </div>
+            </div>
+        </div>
+        <div class="recipe-back">
+            <div class="portions-control">
+                <div class="share-buttons">
+                    <button class="share-btn" onclick="shareRecipe(5)">📱 Поделиться</button>
+                </div>
+                <label>Порции: </label>
+                <select class="portions-select" data-recipe-id="5">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4" selected>4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            <h3>🥟 Ингредиенты:</h3>
+            <ul class="ingredients" data-recipe-id="5">
+                <li data-amount="500">500г муки</li>
+                <li data-amount="1">1 яйцо</li>
+                <li data-amount="200">200мл воды</li>
+                <li data-amount="400">400г фарша</li>
+                <li data-amount="1">1 лук</li>
+                <li>Соль, перец</li>
+            </ul>
+            <h3>👨‍🍳 Приготовление:</h3>
+            <div class="instructions">
+                1. Замесить тесто, отдохнуть 30 мин<br>
+                2. Смешать фарш с луком<br>
+                3. Лепить пельмени<br>
+                4. Варить 7 минут
+            </div>
+            <button class="confetti-btn" onclick="launchConfetti()">🎉 Рецепт готов!</button>
+        </div>
+    </div>
+</div>
+            <!-- РЕЦЕПТ 6: Салат -->
+<div class="recipe-card" 
+     data-category="salaty"
+     data-price="85"  
+     data-base-portions="6"
+     data-search="оливье картофель морковь колбаса яйцо майонез"
+     data-title="Оливье классический"
+     onclick="flipCard(this)">
+    <div class="recipe-flip">
+        <div class="recipe-front">
+            <img src="olive.jpg" alt="Оливье" class="recipe-img">
+            <h3 class="recipe-title">Оливье классический</h3>
+            <div class="recipe-meta">
+                <div class="recipe-time">
+                    <span>🕒</span><span>40 минут</span>
+                </div>
+                <div class="rating-container" data-recipe-id="6">
+                    <span class="rating-stars" data-rating="4.6">★★★★☆</span>
+                    <span class="rating-count">(234)</span>
+                </div>
+            </div>
+        </div>
+        <div class="recipe-back">
+            <div class="portions-control">
+                <div class="share-buttons">
+                    <button class="share-btn" onclick="shareRecipe(6)">📱 Поделиться</button>
+                </div>
+                <label>Порции: </label>
+                <select class="portions-select" data-recipe-id="6">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="6" selected>6</option>
+                </select>
+            </div>
+            <h3>🥗 Ингредиенты:</h3>
+            <ul class="ingredients" data-recipe-id="6">
+                <li data-amount="4">4 картофелины</li>
+                <li data-amount="3">3 моркови</li>
+                <li data-amount="4">4 яйца</li>
+                <li data-amount="300">300г колбасы</li>
+                <li data-amount="200">200г горошка</li>
+                <li data-amount="150">150г майонеза</li>
+            </ul>
+            <h3>👨‍🍳 Приготовление:</h3>
+            <div class="instructions">
+                1. Отварить овощи и яйца<br>
+                2. Нарезать кубиками<br>
+                3. Заправить майонезом<br>
+                4. Настояться 2 часа
+            </div>
+            <button class="confetti-btn" onclick="launchConfetti()">🎉 Рецепт готов!</button>
+        </div>
+    </div>
+</div>
+
             </div>
         </section>
 
@@ -349,39 +518,68 @@
 <p style="text-align: center; font-size: 1.2rem; color: #4ECDC4;">Скоро здесь будут ваши отзывы!</p>
 </section>
         </form>
+        <div style="height: 100px;"></div>
 
-        <!-- 📧 КОНТАКТЫ ОТДЕЛЬНО СНИЗУ -->
-<footer id="contacts" class="contacts-section styled-section">
+<!-- 🏠 НОВЫЙ ФУТЕР - ЗАМЕНИТЕ ВСЁ ПОСЛЕ ОТЗЫВОВ -->
+<footer class="footer">
     <div class="container">
-        <h2>📧 Контакты</h2>
-        <div class="contacts-grid">
-            <div class="contact-item">
-                <span class="contact-icon">📧</span>
-                <div>
-                    <strong>Email</strong>
-                    <p>info@vkusniydom.ru</p>
+        <div class="footer-grid">
+            <!-- 🍳 Логотип + Описание -->
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">🍳 Вкусный дом</a>
+                <p>Домашние рецепты для всей семьи. Простые и вкусные блюда каждый день!</p>
+                <div class="social-links">
+                    <a href="#" aria-label="TikTok">📱</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Telegram">💬</a>
                 </div>
             </div>
-            <div class="contact-item">
-                <span class="contact-icon">📱</span>
-                <div>
-                    <strong>Телефон</strong>
+
+            <!-- 📂 Быстрое меню -->
+            <div class="footer-menu">
+                <h4>🍽️ Рецепты</h4>
+                <ul>
+                    <li><a href="#recipes">Популярные</a></li>
+                    <li><a href="#gorachie">Горячие блюда</a></li>
+                    <li><a href="#salaty">Салаты</a></li>
+                    <li><a href="#garniry">Гарниры</a></li>
+                </ul>
+            </div>
+
+            <!-- 📅 Меню + Формы -->
+            <div class="footer-menu">
+                <h4>📅 Полезное</h4>
+                <ul>
+                    <li><a href="#menu">Меню на неделю</a></li>
+                    <li><a href="#add-recipe">Добавить рецепт</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                </ul>
+            </div>
+
+            <!-- 📧 Контакты -->
+            <div class="footer-contacts">
+                <h4>📧 Связаться</h4>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <p>г. Кемерово, ул. Куливая 25</p>
+                </div>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <p>info@vkusniydom.ru</p>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
                     <p>+7 (999) 123-45-67</p>
                 </div>
             </div>
-            <div class="contact-item">
-                <span class="contact-icon">📍</span>
-                <div>
-                    <strong>Адрес</strong>
-                    <p>г. Кемерово, ул. Куливая 25</p>
-                </div>
-            </div>
-            <div class="contact-item">
-                <span class="contact-icon">🕒</span>
-                <div>
-                    <strong>Время работы</strong>
-                    <p>24/7 — рецепты всегда с вами!</p>
-                </div>
+        </div>
+
+        <!-- 📄 Нижняя полоса -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Вкусный дом. Все рецепты для счастливой семьи ❤️</p>
+            <div class="footer-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
             </div>
         </div>
     </div>
@@ -389,98 +587,123 @@
 
                 
     <script>
-        // 🌙 Темная тема
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
+// 🌙 ТЕМА С ПОЛЗУНКОМ - ПОЛНАЯ АНИМАЦИЯ
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+if (themeToggle) {
+    // Загрузка темы
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    body.setAttribute('data-theme', savedTheme);
+    
+    // Обновление ползунка при загрузке
+    updateThemeToggle(savedTheme);
+    
+    // Переключение
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         
-        // Загрузка сохраненной темы
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        body.setAttribute('data-theme', savedTheme);
-        updateThemeToggle(savedTheme);
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeToggle(newTheme);
+    });
+}
+
+function updateThemeToggle(theme) {
+    if (theme === 'dark') {
+        themeToggle.classList.add('dark-theme');
+    } else {
+        themeToggle.classList.remove('dark-theme');
+    }
+}
+
+
+// 🍔 БУРГЕР - ИСПРАВЛЕННЫЕ ID
+const burger = document.getElementById('burgerMenu');
+const mobileNav = document.getElementById('mobileNav');
+if (burger && mobileNav) {
+    burger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        burger.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+        body.classList.toggle('menu-open');
+    });
+    
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            burger.classList.remove('active');
+            mobileNav.classList.remove('active');
+            body.classList.remove('menu-open');
+        });
+    });
+}
+
+// 🔍 ПОИСК И ФИЛЬТРЫ - ПОЛНАЯ РАБОТА
+const searchInput = document.getElementById('searchInput');
+const searchClear = document.getElementById('searchClear');
+const recipeCards = document.querySelectorAll('.recipe-card');
+
+function performSearch() {
+    const query = searchInput.value.toLowerCase().trim();
+    
+    recipeCards.forEach(card => {
+        const title = card.dataset.title?.toLowerCase() || '';
+        const searchTerms = card.dataset.search?.toLowerCase() || '';
         
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeToggle(newTheme);
-        });
+        if (query === '' || title.includes(query) || searchTerms.includes(query)) {
+            card.classList.remove('search-hidden');
+            card.style.display = '';
+        } else {
+            card.classList.add('search-hidden');
+            card.style.display = 'none';
+        }
+    });
+    
+    if (searchClear) searchClear.style.display = query ? 'block' : 'none';
+}
+
+if (searchInput) searchInput.addEventListener('input', performSearch);
+if (searchClear) searchClear.addEventListener('click', () => {
+    searchInput.value = '';
+    performSearch();
+});
+
+// ФИЛЬТРЫ КАТЕГОРИЙ
+const categoryBtns = document.querySelectorAll('.category-btn');
+categoryBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        categoryBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const category = btn.dataset.category;
         
-        function updateThemeToggle(theme) {
-            themeToggle.classList.toggle('dark-theme', theme === 'dark');
-        }
-
-        // Бургер меню
-        const burger = document.getElementById('burger');
-        const mobileMenu = document.getElementById('mobileMenu');
-        burger.addEventListener('click', () => {
-            burger.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
+        recipeCards.forEach(card => {
+            const cardCategory = card.dataset.category;
+            if ((category === 'all' || cardCategory === category) && 
+                !card.classList.contains('search-hidden')) {
+                card.classList.remove('hidden');
+                card.style.display = '';
+            } else {
+                card.classList.add('hidden');
+                card.style.display = 'none';
+            }
         });
+    });
+});
 
-        document.querySelectorAll('.mobile-menu a, .nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                burger.classList.remove('active');
-                mobileMenu.classList.remove('active');
-            });
-        });
+// Остальные функции (flipCard, shareRecipe, etc.)
+function flipCard(card) {
+    const flip = card.querySelector('.recipe-flip');
+    flip?.classList.toggle('flipped');
+}
 
-        // Флип карточки
-        function flipCard(card) {
-            const flip = card.querySelector('.recipe-flip');
-            flip.classList.toggle('flipped');
-        }
+function shareRecipe(recipeId) {
+    const recipeTitle = document.querySelector(`[data-recipe-id="${recipeId}"] .recipe-title`)?.textContent || 'Рецепт';
+    const text = `🍳 Готовлю: ${recipeTitle} из Вкусный дом!`;
+    navigator.clipboard.writeText(text).then(() => alert('✅ Скопировано: ' + text));
+}
 
-        // 🔍 Поиск по рецептам
-        const searchInput = document.getElementById('searchInput');
-        const searchClear = document.getElementById('searchClear');
-        const recipeCards = document.querySelectorAll('.recipe-card');
 
-        function performSearch() {
-            const query = searchInput.value.toLowerCase().trim();
-            
-            recipeCards.forEach(card => {
-                const title = card.dataset.title?.toLowerCase() || '';
-                const searchTerms = card.dataset.search?.toLowerCase() || '';
-                
-                if (query === '' || title.includes(query) || searchTerms.includes(query)) {
-                    card.classList.remove('search-hidden');
-                } else {
-                    card.classList.add('search-hidden');
-                }
-            });
-            
-            searchClear.style.display = query ? 'block' : 'none';
-        }
-
-        searchInput.addEventListener('input', performSearch);
-        searchClear.addEventListener('click', () => {
-            searchInput.value = '';
-            performSearch();
-            searchInput.focus();
-        });
-
-        // Фильтр категорий
-        const categoryBtns = document.querySelectorAll('.category-btn');
-
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const category = btn.dataset.category;
-                
-                recipeCards.forEach(card => {
-                    const cardCategory = card.dataset.category;
-                    const isSearchMatch = !card.classList.contains('search-hidden');
-                    
-                    if ((category === 'all' || cardCategory === category) && isSearchMatch) {
-                        card.classList.remove('hidden');
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                });
-            });
-        });
 
         // Смена порций
         document.querySelectorAll('.portions-select').forEach(select => {
@@ -715,8 +938,6 @@ function showReviews() {
 }
 
 showReviews(); // Загрузка при старте
-
-
     </script>
 </body>
 </html>
